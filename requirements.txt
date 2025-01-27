@@ -2,4 +2,4 @@ pandas
 numpy
 seaborn
 matplotlib
--e . # This will triger the setup.py file
+-e .
