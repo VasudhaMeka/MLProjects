@@ -42,10 +42,10 @@ def save_object(file_path, obj):
 def evaluate_models(X_train, y_train, X_test, y_test, models):
     try:
         report = {}
-        print("Evaluating models...")  # Check if this prints
+        # print("Evaluating models...")  # Check if this prints
 
         for model_name, model in models.items():
-            print(f"Training {model_name}...")  # Check if models are training
+            # print(f"Training {model_name}...")  # Check if models are training
 
             model.fit(X_train, y_train)
 
@@ -56,7 +56,7 @@ def evaluate_models(X_train, y_train, X_test, y_test, models):
             test_model_score = r2_score(y_test, y_test_pred)
 
             report[model_name] = test_model_score
-            print(f"{model_name} R2 Score: {test_model_score}")
+            # print(f"{model_name} R2 Score: {test_model_score}")
 
         return report  # Ensure this is returning a valid dictionary
 
